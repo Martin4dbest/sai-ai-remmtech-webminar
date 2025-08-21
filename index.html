@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SAI: AI-Powered Customer Service and Sales Webinar</title>
+  <link rel="stylesheet" href="static/css/style.css">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,49 +13,65 @@
   <!-- Favicon (optional, place favicon.ico in root) -->
   <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
+
 <body class="m-0 p-0 bg-gray-50">
 
   <!-- Hero Section -->
   <section class="w-full bg-black flex justify-center">
-    <img src="static/img/web2.JPG" 
-         alt="Webinar Background" 
-         class="w-full max-h-[320px] sm:max-h-[380px] md:max-h-[500px] lg:max-h-[550px] object-contain">
+    <div class="w-full hero-color">
+      <img src="static/img/web2.png" alt="Webinar Background"
+        class="w-full max-h-[320px] sm:max-h-[380px] md:max-h-[500px] lg:max-h-[550px] object-contain">
+    </div>
   </section>
 
-  <!-- Headline & Register Button Section -->
-  <section class="max-w-6xl mx-auto px-4 py-6 sm:py-8 md:py-12 flex flex-col md:flex-row items-center justify-between bg-gray-50">
-    <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center md:text-left leading-snug drop-shadow-lg px-4 py-2">
-      <span class="text-yellow-400">SAI: AI-Powered</span> 
-      <span class="text-blue-400">Customer Service</span> 
-      <span class="text-yellow-400">and</span> 
-      <span class="text-blue-400">Sales Webinar</span>
-    </h1>
 
-    <button id="registerBtn" 
-            class="mt-4 md:mt-0 px-5 py-2 sm:px-6 sm:py-3 bg-red-500 text-white font-semibold rounded-lg shadow hover:bg-red-600 transition transform hover:scale-105">
+  <!-- Headline & Register Button Section -->
+  <section
+    class="max-w-6xl mx-auto px-4 py-6 sm:py-8 md:py-12 flex flex-col md:flex-col items-center justify-between bg-gray-50">
+    <h1
+      class="text-base sm:text-lg md:text-xl lg:text-4xl font-bold text-center md:text-left leading-snug drop-shadow-lg px-4 py-2">
+      <span class="text-red-500">SAI: AI-Powered</span>
+      <span class="blue-text">Customer Service</span>
+      <span class="text-red-500">and</span>
+      <span class="blue-text">Sales Webinar</span>
+    </h1>
+    <div class="w-full text-center">
+    <!-- //// -->
+    </div>
+    <button id="registerBtn"
+      class="mt-4 md:mt-0 px-5 py-2 sm:px-6 sm:py-3 bg-red-500 text-white font-semibold rounded-lg shadow hover:bg-red-600 transition transform hover:scale-105">
       Register Now
     </button>
   </section>
 
   <!-- Registration Form -->
-  <section id="formSection" class="hidden max-w-md sm:max-w-lg mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8 mt-6 mb-12">
+  <section id="formSection"
+    class="hidden max-w-md sm:max-w-lg mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8 mt-6 mb-12">
     <h2 class="text-xl sm:text-2xl font-bold mb-6 text-center text-indigo-700">Register for the Webinar</h2>
     <form id="webinarForm" action="https://formspree.io/f/mqalvebz" method="POST" class="space-y-4">
-      <input type="text" name="company" placeholder="Company Name" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      <input type="text" name="job_title" placeholder="Job Title" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      <input type="text" name="industry" placeholder="Industry" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      <input type="text" name="phone" placeholder="Phone Number" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      
-      <select name="source" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <input type="text" name="company" placeholder="Company Name" required
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <input type="text" name="job_title" placeholder="Job Title" required
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <input type="text" name="industry" placeholder="Industry" required
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <input type="text" name="phone" placeholder="Phone Number" required
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <input type="email" name="email" placeholder="Email Address" required
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+
+      <select name="source" required
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
         <option value="">How did you hear about us?</option>
         <option>Email</option>
         <option>Social Media</option>
         <option>Friend</option>
         <option>Other</option>
       </select>
-      
-      <button type="submit" class="w-full bg-indigo-600 text-white py-2 sm:py-3 rounded-lg font-semibold shadow hover:bg-indigo-700 transition transform hover:scale-105">
+
+
+      <button type="submit"
+        class="w-full bg-indigo-600 text-white py-2 sm:py-3 rounded-lg font-semibold shadow hover:bg-indigo-700 transition transform hover:scale-105">
         ✅ Submit Registration
       </button>
     </form>
@@ -99,5 +117,34 @@
       }
     });
   </script>
+  <!-- Patners Section-->
+  <section>
+    <h3 class="mb-4 text-center">
+      Sai: Custom Integrations Supported: Tailored integration with
+      <br />
+      proprietary systems or
+      internal tools based on your infrastructure and workflows.
+    </h3>
+    <div class="flex items-center justify-center gap-6 py-4 px-2 w-full bg-gray-200">
+      <div class="w-24 h-16 flex items-center justify-center">
+        <img class="object-contain w-full h-full" src="static/img/brands/img1.png" alt="img1">
+      </div>
+      <div class="w-24 h-16 flex items-center justify-center">
+        <img class="object-contain w-full h-full" src="static/img/brands/img2.png" alt="img2">
+      </div>
+      <div class="w-24 h-16 flex items-center justify-center">
+        <img class="object-contain w-full h-full" src="static/img/brands/img3.png" alt="img3">
+      </div>
+      <div class="w-24 h-16 flex items-center justify-center">
+        <img class="object-contain w-full h-full" src="static/img/brands/img4.png" alt="img4">
+      </div>
+      <div class="w-24 h-16 flex items-center justify-center">
+        <img class="object-contain w-full h-full" src="static/img/brands/img5.png" alt="img5">
+      </div>
+    </div>
+  </section>
+
+
 </body>
+
 </html>
