@@ -115,7 +115,7 @@ body {
 <body>
 
 <div class="glass-card">
-  <h2 class="webinar-title"> Webinar: August 28, 2:00 PM</h2>
+  <h5 class="webinar-title"> SAI - AI Webinar: August 28, 2:00 PM</h5>
   <p class="subtitle">Mark The Date And Time Of The Webinar And Join With The Link Provided Below...</p>
 
   <!-- Countdown -->
@@ -149,8 +149,10 @@ body {
   </div>
 
   <!-- Success Message -->
-  <div id="success-message"><i class="fa-solid fa-check-circle"></i> Successfully Registered For The Webinar!</div>
+  <div id="success-message">
+  ✅ Registration successful. Please check your email for the meeting link and further details.
 </div>
+
 
 <script>
 // Countdown Timer
@@ -176,9 +178,9 @@ const timer = setInterval(() => {
 
 // Copy Link
 function copyWebinarLink() {
-  const link = "https://example.com/webinar";
+  const link = "https://meet.google.com/zwq-gffj-hes";
   navigator.clipboard.writeText(link).then(() => {
-    alert("✅ Webinar link copied!");
+    alert("✅ SAI: AI Webinar link copied!");
   });
 }
 </script>
