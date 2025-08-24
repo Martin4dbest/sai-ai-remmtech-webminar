@@ -122,25 +122,29 @@ body {
   <div id="countdown"></div>
 
   <!-- Join Button -->
+
   <div class="mb-3">
-    <a href="https://example.com/webinar" target="_blank" class="btn btn-gradient btn-lg">
+    <a href="https://meet.google.com/hpo-wdas-aef" target="_blank" class="btn btn-gradient btn-lg">
       <i class="fa-solid fa-video"></i> Join Webinar
     </a>
   </div>
 
+
   <!-- Buttons -->
   <div class="cta-buttons">
     <!-- Google Calendar -->
-    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Webinar&dates=20250828T140000Z/20250828T150000Z&details=Join+here:+https://example.com/webinar&location=Online" 
-       target="_blank" class="btn btn-outline">
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AI-Powered+Customer+Service+Webinar&dates=20250828T140000Z/20250828T150000Z&details=Join+the+session+using+this+Google+Meet+link:+https://meet.google.com/hpo-wdas-aef&location=Google+Meet" 
+      target="_blank" class="btn btn-outline">
       <i class="fa-brands fa-google"></i> Google
     </a>
 
+
     <!-- Outlook Calendar -->
-    <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Webinar&body=Join+here:+https://example.com/webinar&startdt=2025-08-28T14:00:00&enddt=2025-08-28T15:00:00&location=Online" 
-       target="_blank" class="btn btn-outline">
+    <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=AI-Powered+Customer+Service+Webinar&body=Join+the+session+using+this+Google+Meet+link:+https://meet.google.com/hpo-wdas-aef&startdt=2025-08-28T14:00:00&enddt=2025-08-28T15:00:00&location=Google+Meet" 
+      target="_blank" class="btn btn-outline">
       <i class="fa-solid fa-calendar"></i> Outlook
     </a>
+
 
     <!-- Copy Link -->
     <button class="copy-btn btn" onclick="copyWebinarLink()">
@@ -178,7 +182,7 @@ const timer = setInterval(() => {
 
 // Copy Link
 function copyWebinarLink() {
-  const link = "https://meet.google.com/zwq-gffj-hes";
+  const link = "https://meet.google.com/hpo-wdas-aef";
   navigator.clipboard.writeText(link).then(() => {
     alert("✅ SAI: AI Webinar link copied!");
   });
